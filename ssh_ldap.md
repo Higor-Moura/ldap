@@ -1,6 +1,6 @@
-# configurar ssh com usuario ldap
+# Como configurar client ldap
 
-**Adicione o endereço do servidor LDAP ao '/etc/hosts' arquivo se você não tiver um servidor DNS ativo na sua rede.**
+**Adicione o endereço do servidor LDAP ao `/etc/hosts` arquivo se você não tiver um servidor DNS ativo na sua rede.**
 
 ```bash
 sudo vim /etc/hosts
@@ -35,7 +35,7 @@ sudo apt install ldap-auth-client
 
 ![Captura de tela de 2025-02-21 12-14-39](https://github.com/user-attachments/assets/c631e84d-3591-412b-8601-271808e11ce4)
 
-**6. Defina uma conta LDAP para root, algo como cn=admin,cd=example,cn=com**
+**6. Defina uma conta LDAP para root, algo como `cn=admin,cd=example,cn=com`**
 
 ![Captura de tela de 2025-02-21 12-15-55](https://github.com/user-attachments/assets/babe4eef-bea0-4516-a332-ec17c7859c25)
 
@@ -43,7 +43,7 @@ sudo apt install ldap-auth-client
 
 ![Captura de tela de 2025-02-21 12-17-27](https://github.com/user-attachments/assets/d12d31bd-f504-4245-b4ac-033380a4d757)
 
-## Após a instalação, edite  /etc/nsswitch.confe 
+## Após a instalação, edite  `/etc/nsswitch.conf`
 
 **Adicione a autenticação ldap às  linhas passwd e  group .**
 
@@ -93,7 +93,7 @@ ssl on
 tls_checkpeer no
 ```
 
-**Configure o arquivo /etc/pam.d/common-password**
+**Configure o arquivo `/etc/pam.d/common-password`**
 
 ```
 sudo vi /etc/pam.d/common-password
@@ -139,7 +139,8 @@ password        optional        pam_gnome_keyring.so
 # end of pam-auth-update config
 ```
 
-**Configure o arquivo /etc/pam.d/common-session**
+**Configure o arquivo `/etc/pam.d/common-session`**
+**adicionando `session optional        pam_mkhomedir.so skel=/etc/skel umask=077` na ultima linha**
 
 ```
 sudo vi /etc/pam.d/common-session
@@ -182,7 +183,7 @@ session optional                        pam_mkhomedir.so
 session optional        pam_mkhomedir.so skel=/etc/skel umask=077
 ```
 
-**Configure o arquivo /etc/ldap/ldap.conf**
+**Configure o arquivo `/etc/ldap/ldap.conf`**
 
 ```
 sudo vi /etc/ldap/ldap.conf
