@@ -207,3 +207,32 @@ URI    ldap://ldap.example.com
 # TLS certificates (needed for GnuTLS)
 TLS_CACERT      /etc/ssl/certs/ca-certificates.crt
 ```
+
+# Como configurar ssh com usuario LDAP
+
+> Primeiro passo é criar um grupo de ssh no ldap e adicionar os usuarios que voce deseja que tenha acesso.
+
+![Captura de tela de 2025-02-21 13-24-39](https://github.com/user-attachments/assets/a9cc1980-0d6b-420f-a12c-6844e2994857)
+
+> Obs: no `gidNumber` do grupo altere para um numero de 500 para cima, por que se colocar abaixo disso vai dar conflito com os id do sistema
+
+![Captura de tela de 2025-02-21 13-29-03](https://github.com/user-attachments/assets/18c04d29-7f66-4da7-9922-d82cc92132a5)
+
+**Edite o arquivo ssh**
+
+```
+sudo vi /etc/ssh/ssh_config
+```
+### **Adicione `AllowGroups ssh` abaixo de `Include /etc/ssh/ssh_config.d/*.conf`**
+
+```
+AllowGroups ssh
+```
+
+> Obs: Apos AllowGroups sera o nome do grupo que voce criou no LDAP no meu caso é ssh
+
+**Reenicie o servico ssh**
+
+```
+sudo systemctl restart ssh.service
+```
