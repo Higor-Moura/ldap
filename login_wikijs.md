@@ -30,7 +30,6 @@
 
 ![Captura de tela de 2025-03-12 11-33-59](https://github.com/user-attachments/assets/0bb508ea-1509-47cf-b15d-4bd91f5ad367)
 
-> *Nota:Se tiver certificado ative as opções `Usar TLS` e `Verificar certificado TLS` e passe o caminho do certificado.*
-{.is-warning}
+> *Nota: Se tiver certificado ative as opções `Usar TLS` e `Verificar certificado TLS` e passe o caminho do certificado.* {.is-warning}
 
 ![Captura de tela de 2025-03-12 11-37-39](https://github.com/user-attachments/assets/dc50d319-3266-4b37-856e-72caa36c80af)
