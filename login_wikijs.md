@@ -34,3 +34,15 @@
 {.is-warning}
 
 ![Captura de tela de 2025-03-12 11-37-39](https://github.com/user-attachments/assets/dc50d319-3266-4b37-856e-72caa36c80af)
+
+## Em seguida faça igual a configuração abaixo.
+
+![Captura de tela de 2025-03-12 11-41-57](https://github.com/user-attachments/assets/be7fafc2-8255-4f61-9fd7-4745586d134c)
+
+## Na parte de configuração do grupo faça de acordo com a sua base do LDAP, Segue exemplo abaixo.
+
+![Captura de tela de 2025-03-12 11-45-35](https://github.com/user-attachments/assets/d4fff866-c748-4f01-aae9-93d669f920f8)
+
+## Na proxima etapa faça como no exemplo abaixo.
+
+![Captura de tela de 2025-03-12 11-48-00](https://github.com/user-attachments/assets/025dcc25-8b03-4fb2-9450-7117d6034c4a)
