@@ -14,11 +14,23 @@
 
 ![Captura de tela de 2025-03-12 11-20-21](https://github.com/user-attachments/assets/437fd8b3-7a14-4e8b-8467-708e9ff98c05)
 
-## ADMIN VINCULAR DN
+## Admin Vincular DN
 
 ![Captura de tela de 2025-03-12 11-22-54](https://github.com/user-attachments/assets/7af9b3c4-ebbd-442d-90a6-4e1b6ccbf385)
 
-## CREDENCIAIS DE VINCULAÇÃO DO ADMINISTRADOR
+## Credenciais de vinculação do administrador
 
 ![Captura de tela de 2025-03-12 11-25-17](https://github.com/user-attachments/assets/80a7cf61-3ea2-4d14-896c-4a9113008354)
 
+## Base de Pesquisa
+
+![Captura de tela de 2025-03-12 11-29-35](https://github.com/user-attachments/assets/084b53fe-7d40-4e07-9855-1ced5ca530c2)
+
+## Filtro de pesquisa
+
+![Captura de tela de 2025-03-12 11-33-59](https://github.com/user-attachments/assets/0bb508ea-1509-47cf-b15d-4bd91f5ad367)
+
+> *Nota:Se tiver certificado ative as opções `Usar TLS` e `Verificar certificado TLS` e passe o caminho do certificado.*
+{.is-warning}
+
+![Captura de tela de 2025-03-12 11-37-39](https://github.com/user-attachments/assets/dc50d319-3266-4b37-856e-72caa36c80af)
